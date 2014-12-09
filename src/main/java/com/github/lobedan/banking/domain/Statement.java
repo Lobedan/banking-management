@@ -19,8 +19,19 @@ public class Statement extends AbstractElasticSearchEntity {
   public Statement() {
   }
 
-  public Date getDate() {
+  public String getFileName() {
+    return fileName;
+  }
 
+  public void setFileName(String aFileName) {
+    fileName = aFileName;
+  }
+
+  public String getFile() {
+    return this.filePath + "/" + this.fileName;
+  }
+
+  public Date getDate() {
     return date;
   }
 
