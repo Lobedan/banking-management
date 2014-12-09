@@ -1,0 +1,85 @@
+{
+  "bank": {
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "name": {
+        "type": "name"
+      },
+      "accounts": {
+        "type": "account"
+      }
+    }
+  },
+  "accounts": {
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "accountNumber": {
+        "type": "string"
+      },
+      "bankCode": {
+        "type": "string"
+      },
+      "positions": {
+        "type": "position"
+      },
+      "statements": {
+        "type": "statement"
+      },
+      "payed": {
+        "type": "boolean"
+      }
+    }
+  },
+  "position": {
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "date": {
+        "type": "date"
+      },
+      "description": {
+        "type": "string"
+      },
+      "payee": {
+        "type": "payee"
+      },
+      "purpose": {
+        "type": "string"
+      }
+    }
+  },
+  "payee": {
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      }
+    }
+  },
+  "statement": {
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "date": {
+        "type": "date"
+      },
+      "filePath": {
+        "type": "string"
+      },
+      "host": {
+        "type": "string"
+      }
+    }
+  }
+}
